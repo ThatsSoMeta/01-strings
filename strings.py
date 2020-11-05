@@ -34,7 +34,6 @@ def donuts(count):
         return 'Number of donuts: ' + str(count)
 
 
-
 # B. both_ends
 # Given a string s, return a string made of the first 2
 # and the last 2 characters of the original string.
@@ -112,15 +111,15 @@ def verbing(s):
 
 def not_bad(s):
     # your code here
-  start = s.find('not')
-  end = s.find('bad') + 3
-  if start < 0 or end < 3:
-    return s
-  else:
-    if start < end:
-      return s[:start] + 'good' + s[end:]
+    start = s.find('not')
+    end = s.find('bad') + 3
+    if start < 0 or end < 3:
+        return s
     else:
-      return s
+        if start < end:
+            return s[:start] + 'good' + s[end:]
+        else:
+            return s
 
 # G. front_back
 # Consider dividing a string into two halves.
